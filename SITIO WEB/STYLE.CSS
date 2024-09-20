@@ -92,11 +92,12 @@ body {
 }
 
 .menu .navbar ul li a {
-    font-size: 25px;
+    font-size: 15px;
     padding: 20px;
     color: #ffffff;
     display: block;
 }
+
 
 .menu .navbar ul li a:hover {
     color: #686868;
@@ -135,14 +136,6 @@ body {
     min-width: 400px;
 }
 
-table {
-    width: 100%;
-}
-
-th,
-td {
-    color: #ffffff;
-}
 
 .borrar {
     background-color: aqua;
