@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="imagenes/LOGO 2.png">
+
+    <title>HEIN EXPRESS</title>
+
+</head>
+
+<header class="header">
+    <div class="head">
+        <a href="index.html" class="logo"><img src="imagenes/LOGO 2.png" style="width:50%;"></a>
+        <div class="menu container">
+
+            <h1 class="title">HEIN EXPRESS </h1>
+            <input type="checkbox" id="menu">
+
+            <label for="menu"><img src="imagenes/menu.png" class="menu-icono" alt=""></label>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="formI.html">Iniciar sesion </a></li>
+                    <li><a href="formR.html">Registrarse </a></li>
+                    <li><a href="hombre.html">Hombre</a></li>
+                    <li><a href="mujer.html">Mujer </a></li>
+                    <li><a href="quienes.html">¿Quienes somos? </a></li>
+                    <li><a href="buscador.html">Consultar productos </a></li>
+                </ul>
+            </nav>
+            <div>
+                <a href=""> <img src="imagenes/car.svg" id="img-car" alt=""></a>
+            </div>
+        </div>
+</header>
+
+<body>
+    
+    <h1>Carrito de Compras</h1>
+    <div class="cart">
+        <ul id="cart-items"></ul>
+        <p class="cart-total">Total: $<span id="cart-total">0</span></p>
+        <button id="clear-cart" class="add-to-cart">Vaciar carrito</button>
+    </div>
+</body>
+<footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                <a href="#">
+                    <img src="imagenes/LOGO 2.png" alt="Logo de SLee Dw">
+                </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h3>CUENTA</h3>
+            <a href="formI.html">Iniciar sesion</a>
+            <a href="formR.html">Registrarse</a><br>
+            <a href="#">Ayuda</a>
+            <a href="#">Soporte</a>
+        </div>
+        <div class="box">
+            <h3>CATEGORIAS</h3>
+            <li><a href="hombre.html">Hombre</a></li>
+            <li><a href="mujer.html">Mujer</a></li>
+
+        </div>
+        <div class="box">
+            <h3>SOBRE NOSOTROS</h3>
+            <a href="quienes.html"> ¿Quienes somos?</a>
+        </div>
+        <div class="box">
+            <h3>SIGUENOS</h3>
+            <div class="red-social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small> 2024 <b>HEIN EXPRESS</b> - Todos los Derechos Reservados.</small><br>
+        <b>UN SALUDO PARA JESUS VILLARREAL</b> </small>
+    </div>
+</footer>
+
+<script src="js/vaciar-carrito.js"></script>
+
+
+</html>
