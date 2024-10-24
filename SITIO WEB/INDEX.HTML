@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" crossorigin="anonymous"></script>
     <link rel="icon" href="imagenes/LOGO 2.png">
 
     <title>HEIN EXPRESS</title>
@@ -18,13 +17,11 @@
 <header class="header">
     <div class="head">
         <a href="index.html" class="logo"><img src="imagenes/LOGO 2.png" style="width:50%;"></a>
+
+        
+
         <div class="menu container">
-
             <h1 class="title">HEIN EXPRESS </h1>
-            <input type="checkbox" id="menu">
-
-            <label for="menu"><img src="imagenes/menu.png" class="menu-icono" alt=""></label>
-
             <nav class="navbar">
                 <ul>
                     <li><a href="formI.html">Iniciar sesion </a></li>
@@ -36,9 +33,16 @@
                 </ul>
             </nav>
             <div>
-                <a href="carrito.html"> <img src="imagenes/car.svg" id="img-car" alt=""></a>
+                <ul>
+                    <li class="submenu">
+                        <a href="carrito.html"><img src="imagenes/car.svg" id="img-car" alt=""></a>
+                        <div id="carrito"> <p>Total del carrito: $<span id="total-carrito">0</span></p></div>
+                           
+                    </li>
+                </ul>
             </div>
         </div>
+    </div>
 </header>
 
 <body>
@@ -50,27 +54,62 @@
                 <div class="swiper-slide">
                     <div class="header-info">
                         <div class="header-txt">
+                            <h2 >Chamarra Hombre negra</h2>
                             <div class="product" data-name="Chamarra negra" data-price="500">
-                                <h2>Chamarra Hombre negra</h2>
-                                <div class="product">
-                                    <p class="price-1">$700</p>
-                                    <p class="precio">$500</p>
-                                </div>
-                                <button class="add-to-cart">Añadir al carrito</button>
-                                <a href="#" class="btn-1"> Informacion</a>
-                                
-                            </div>
+                                <p class="price-1">$700</p>
+                                <p class="precio">$500</p>
                             
+                            <button class="add-to-cart">Añadir al carrito</button>
+                        </div>
                         </div>
                         <div class="header-img">
                             <img src="imagenes/descarga.jpg" alt="">
                         </div>
                     </div>
+
+
+                </div>
+                <div class="swiper-slide">
+                    <div class="header-info">
+                        <div class="header-txt">
+                            <h2>Pantalon Mujer</h2>
+                            <div class="prduct">
+                                <p class="price-1">$600</p>
+                                <p class="precio">$400</p>
+                           
+                            <button class="add-to-cart">Añadir al carrito</button>
+                        </div>
+                        </div>
+                        <div class="header-img">
+                            <img src="imagenes/pantalon mujer mezclilla.jpg" height="200px" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-slide">
+                    <div class="header-info">
+                        <div class="header-txt">
+                            <h2>Short Niño</h2>
+                            <div class="price">
+                                <p class="price-1">$300</p>
+                                <p class="precio">$200</p>
+                            </div>
+                            <a href="#" class="btn-1"> Informacion</a>
+                        </div>
+                        <div class="header-img">
+                            <img src="imagenes/descarga (1).jpg" alt="">
+                        </div>
+                    </div>
+
                 </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-paginattion"></div>
         </div>
-<hr>
-       <div class="catalogo">
+    </div>
+    <hr>
+    <div class="catalogo">
         <div class="product" data-name="Camiseta Blanco" data-price="20">
             <h3>Camiseta Blanco</h3>
             <p>Precio: $20</p>
@@ -190,7 +229,7 @@
             <p>Precio: $35</p>
             <button class="add-to-cart">Añadir al carrito</button>
         </div>
-    </div> 
+    </div>
 </body>
 <footer class="pie-pagina">
     <div class="grupo-1">
@@ -233,8 +272,10 @@
         <b>UN SALUDO PARA JESUS VILLARREAL</b> </small>
     </div>
 </footer>
-
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" crossorigin="anonymous"></script>
 <script src="js/car.js"></script>
+<script src="js/swipper.js"></script>
+<script src="js/series-events.js"></script>
 
 
 </html>
