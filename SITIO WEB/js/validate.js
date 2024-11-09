@@ -1,25 +1,23 @@
-    document.getElementById("loginform").addEventListener("submit", function(event) {
-        event.preventDefault();
+document.getElementById("loginform").addEventListener("submit", function(event) {
+    event.preventDefault();
 
-        const email = document.getElementById("email").value;
-        const password = document.getElementById("password").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
 
-        // Correo y contraseña específicos permitidos
-        const allowedEmail = "juan_sec90@hotmail.com";
-        const allowedPassword = "123456789";
+     const users = [
+        { email: "admin@example.com", password: "admin123", role: "admin" },
+        { email: "user@example.com", password: "user123", role: "user" }
+    ];
 
-        if (email !== allowedEmail) {
-            alert("Correo incorrecto.");
-            return;
-        }
+    const user = users.find(user => user.email === email && user.password === password);
 
-        if (password !== allowedPassword) {
-            alert("Contraseña incorrecta.");
-            return;
-        }
+    if (!user) {
+        alert("Correo o contraseña incorrectos.");
+        return;
+    }
 
-        alert("Inicio de sesión exitoso");
+    localStorage.setItem("user", JSON.stringify(user));
 
-        window.location.href = "index.html";
-    });
-
+    alert("Inicio de sesión exitoso");
+    window.location.href = "index.html";
+});
