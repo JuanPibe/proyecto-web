@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HEIN EXPRESS - Recuperar Contraseña</title>
+</head>
+
+<header class="header">
+    <div class="head">
+        <a href="index.html" class="logo"><img src="imagenes/LOGO 2.png" style="width:50%;"></a>
+        <div class="menu container">
+            <h1 class="title">Recuperar Contraseña</h1>
+        </div>
+    </div>
+</header>
+
+<body>
+    <div id="contenedor">
+        <div id="central">
+            <div id="login">
+                <div class="titulo">Recuperar Contraseña</div>
+
+         
+                <div id="correoSeccion">
+                    <p>Ingresa tu correo electrónico:</p>
+                    <form id="correoForm">
+                        <input type="email" id="correoRecuperacion" placeholder="Correo electrónico" required><br><br>
+                        <button type="button" id="verificarCorreo" title="Verificar correo">Verificar Correo</button>
+                    </form>
+                </div>
+
+             
+                <div id="codigoSeccion" style="display: none;">
+                    <p>Ingresa el código de recuperación enviado a tu correo:</p>
+                    <form id="codigoForm">
+                        <input type="text" id="codigoRecuperacion" placeholder="Código de recuperación" required><br><br>
+                        Nueva Contraseña<br>
+                        <input type="password" id="nuevaContraseña" placeholder="Nueva contraseña" required><br><br>
+                        <button type="button" id="verificarCodigo" title="Cambiar contraseña">Cambiar Contraseña</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/recuperar.js"></script>
+</body>
+
+</html>
